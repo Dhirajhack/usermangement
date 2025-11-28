@@ -2,7 +2,7 @@ import users from "./User";
 import SingleUser from "./SingleUser";
 import { useState } from "react";
 
-const Alluser=()=>{
+const AllUser=()=>{
     const[emp,setEmp]=useState([]);
     const [showemp,setShowemp]=useState(false)
 
