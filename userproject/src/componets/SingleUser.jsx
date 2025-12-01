@@ -4,8 +4,10 @@ const SingleUser=({user,deleteUser})=>{
         <tr>
             <td>{user.name}</td>
             <td>{user.email}</td>
-            <td>{user.mobile}</td>
-            <button onClick={()=>delateUser(user.id)}>Delete</button>
+            {/* <td>{user.email}</td> */}
+            {/* <td>{user.email}</td> */}
+            <td>{user.moblie}</td>
+            <button onClick={()=>deleteUser(user.id)}>Delete</button>
         </tr>
     )
 }
