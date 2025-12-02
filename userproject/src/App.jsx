@@ -7,9 +7,9 @@ function App() {
   return (
     <>
       {/* <AllUser/> */}
-      <center>
+     
          <Register/>
-      </center>
+    
 
     </>
   )
