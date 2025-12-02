@@ -44,18 +44,25 @@ const[formData,setformDate]=useState({
            <h1>
              Register Form
            </h1>
-           <form action="">
+           <form action="" onChange={handleSubmit}>
+             
+             {successMsg && <h2><mark>{successMsg}</mark></h2>}
+
             <label htmlFor="">Enter  Name</label>
-            <input type="text" name="uname" />
+            <input type="text" name="uname" onChange={handleChange} />
+            {errors.uname && <p><mark>{errors.uname}</mark></p>}
             <br /><br />
             <label htmlFor=""> Enter Email</label>
-            <input type="text" name="uemail" />
+            <input type="text" name="uemail"onChange={handleChange} />
+              {errors.uemail && <p><mark>{errors.uemail}</mark></p>}
             <br /><br />
             <label htmlFor="">Enter Password</label>
-            <input type="text" name="upass" />
+            <input type="text" name="upass" onChange={handleChange} />
+              {errors.upass && <p><mark>{errors.upass}</mark></p>}
             <br /><br />
             <label htmlFor=""> Enter Confirm Password</label>
-            <input type="text" name="ucpass" />
+            <input type="text" name="ucpass" onChange={handleChange} />
+              {errors.ucpass && <p><mark>{errors.ucpass}</mark></p>}
             <br /><br />
             <input  type="submit" value={"submit"}/>
             <input type="reset" value={"cancel"}/>
